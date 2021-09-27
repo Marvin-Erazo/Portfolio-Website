@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 /*==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: ;
-
     /*========== Colors ==========*/
     /* Change favorite color */
     --hue-color: 250;
@@ -84,7 +82,6 @@ html{
 }
 
 body{
-    margin: 0 0  var(--header-height);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -247,13 +244,13 @@ img{
 
 
 /*==================== HOME ====================*/
+
 .home-container{
     gap: 1rem;
 }
 
 .home-content{
     grid-template-columns: .5fr 3fr;
-    padding-top: 3.5rem;
     align-items: center;
 }
 
@@ -304,6 +301,8 @@ img{
     font-size: 2rem;
     animation: up-down 1s linear infinite;
 }
+
+
 
 /*==================== BUTTONS ====================*/
 .button{
