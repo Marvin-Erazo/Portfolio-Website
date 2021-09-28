@@ -471,7 +471,7 @@ img{
 /*==================== QUALIFICATION ====================*/
 .qualification-tabs{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-bottom: var(--mb-2);
 }
 
@@ -487,13 +487,15 @@ img{
 
 .qualification-icon{
     font-size: 1.8rem;
-    margin-right: var(--mb-0-25);
+
 }
 
 .qualification-data{
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .qualification-title{
@@ -523,7 +525,7 @@ img{
 .qualification-line{
     display: block;
     width: 1px;
-    height: 100%;
+    height:  calc(100% + 2rem);
     background-color: var(--first-color);
     transform: translate(6px,-7px);
 }
