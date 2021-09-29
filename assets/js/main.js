@@ -50,7 +50,24 @@ skillsHeader.forEach((el)=>{
     el.addEventListener('click',toggleSkills)
 })
 /*==================== QUALIFICATION TABS ====================*/
+const qualifContent = document.getElementsByClassName('qualification-content'),
+      qualifTab = document.querySelectorAll('.qualification-tab')
 
+function toggleQualif(){
+    let itemClass = this.parentNode.className
+
+    for(i = 0;i < qualifContent.length;i++){
+        qualifContent[i].className = 'qualification-content qualification-close'
+    }
+
+    if(itemClass === 'qualification-content qualification-close'){
+        this.parentNode.className = 'qualification-content qualification-open'
+    }
+}
+
+qualifTab.forEach((el)=>{
+    el.addEventListener('click',toggleQualif)
+})
 
 /*==================== SERVICES MODAL ====================*/
 

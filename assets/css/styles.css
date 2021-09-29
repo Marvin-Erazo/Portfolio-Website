@@ -469,10 +469,9 @@ img{
     transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
-.qualification-tabs{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: var(--mb-2);
+.qualification-tab{
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .qualification-button{
@@ -491,10 +490,7 @@ img{
 }
 
 .qualification-data{
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    column-gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -514,21 +510,25 @@ img{
     color: var(--text-color-light);
 }
 
-.qualification-rounder{
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    background-color: var(--first-color);
-    border-radius: 50%;
+.qualification-arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+    transition: .4s;
 }
 
-.qualification-line{
-    display: block;
-    width: 1px;
-    height:  calc(100% + 2rem);
-    background-color: var(--first-color);
-    transform: translate(6px,-7px);
+.qualification-close .qualification-list{
+    height: 0;
+    overflow: hidden;
 }
+
+.qualification-open .qualification-list{
+    height: max-content;
+}
+
+.qualification-open .qualification-arrow{
+    transform: rotate(-180deg);
+}
+
 /*==================== SERVICES ====================*/
 
 
