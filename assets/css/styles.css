@@ -279,6 +279,9 @@ img{
 .home-description{
     margin-bottom: var(--mb-2);
 }
+.home-button .button-icon{
+    margin-right: 4px;
+}
 
 .home-scroll{
     display: none;
@@ -651,6 +654,7 @@ img{
 .active-modal{
     opacity: 1;
     visibility: visible;
+    transition: .5s;
 }
 
 /*==================== PORTFOLIO ====================*/
@@ -668,6 +672,11 @@ img{
     justify-self: center;
 }
 
+.portfolio-data{
+    margin: 0 1rem;
+    text-align: center;
+}
+
 .portfolio-title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
@@ -675,6 +684,7 @@ img{
 
 .portfolio-description{
     margin-bottom: var(--mb-0-75);
+    text-align: justify;
 }
 
 .swiper-button-prev::after,
@@ -774,8 +784,67 @@ img{
     bottom: 0;
 }
 /*==================== CONTACT ME ====================*/
+.contact-container{
+    row-gap: 3rem;
+}
 
+.contact-information{
+    display: flex;
+    margin-bottom: var(--mb-2);
+}
 
+.contact-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: var(--mb-0-75);
+}
+
+.contact-title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact-subtitle a{
+    color: var(--first-color-second);
+}
+
+.contact-subtitle a:hover{
+    color: var(--first-color-alt);
+    cursor: pointer;
+}
+.contact-subtitle{
+    font-size: var(--small-font-size);
+}
+
+.contact-content{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+}
+
+.contact-label{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+}
+
+.contact-input{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+}
+
+.contact-submit{
+    border: none;
+}
+
+.contact-submit:hover{
+    cursor: pointer;
+}
 /*==================== FOOTER ====================*/
 
 
