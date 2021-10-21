@@ -101,10 +101,6 @@
                                 Responsive and beautiful websites with  CSS, HTML and JS
                             </p>
 
-                            <a href="" class="home-button button button--flex">
-                                <i class="uil uil-window button-icon"></i> View my works
-                            </a>
-                            OR
                             <a href="#contact" class="home-button button button--flex">
                                 <i class="uil uil-message button-icon"></i> Contact me
                             </a>
@@ -394,39 +390,37 @@
                 <div class="services-container container grid">
                     <!-- SERVICES 1 -->
                     <div class="services-content">
-                        <div>
-                            <i class="uil uil-browser services-icon"></i>
-                            <h3 class="services-title">Responsive Web <br> Designer</h3>
+                        <i class="uil uil-browser services-icon"></i>
+                        <h3 class="services-title">Responsive Web <br> Designer</h3>
 
-                            <span class="button button--flex button--small button--link services-button">
-                                View More
-                                <i class="uil uil-plus button-icon"></i>
-                            </span>
+                        <span class="button button--flex button--small button--link services-button">
+                            View More
+                            <i class="uil uil-plus button-icon"></i>
+                        </span>
 
-                            <div class="services-modal">
-                                <div class="services-modal-content">
-                                    <h4 class="services-modal-title">Responsive Web <br> Designer</h4>
-                                    <i class="uil uil-times services-modal-close"></i>
+                        <div class="services-modal">
+                            <div class="services-modal-content">
+                                <h4 class="services-modal-title">Responsive Web <br> Designer</h4>
+                                <i class="uil uil-times services-modal-close"></i>
 
-                                    <ul class="services-modal-services grid">
-                                        <li class="services-modal-service">
-                                            <i class="uil uil-check-circle services-modal-icon"></i>
-                                            <p>Desktop and Smarthphone resolutions.</p>
-                                        </li>
-                                        <li class="services-modal-service">
-                                            <i class="uil uil-check-circle services-modal-icon"></i>
-                                            <p>Beautiful designes</p>
-                                        </li>
-                                        <li class="services-modal-service">
-                                            <i class="uil uil-check-circle services-modal-icon"></i>
-                                            <p>Animated pages</p>
-                                        </li>
-                                        <li class="services-modal-service">
-                                            <i class="uil uil-check-circle services-modal-icon"></i>
-                                            <p>Frameworks: Bootstrap, Tailwind CSS</p>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <ul class="services-modal-services grid">
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-circle services-modal-icon"></i>
+                                        <p>Desktop and Smarthphone resolutions.</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-circle services-modal-icon"></i>
+                                        <p>Beautiful designes</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-circle services-modal-icon"></i>
+                                        <p>Animated pages</p>
+                                    </li>
+                                    <li class="services-modal-service">
+                                        <i class="uil uil-check-circle services-modal-icon"></i>
+                                        <p>Frameworks: Bootstrap, Tailwind CSS</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -435,7 +429,7 @@
                     <div class="services-content">
                         <div>
                             <i class="uil uil-arrow services-icon"></i>
-                            <h3 class="services-title">Ftontend <br> Developer</h3>
+                            <h3 class="services-title">Frontend Web <br> Developer</h3>
 
                             <span class="button button--flex button--small button--link services-button">
                                 View More
@@ -628,33 +622,31 @@
                         </div>
                     </div>
 
-                    <form method="POST" class="contact-form grid">
+                    <form class="contact-form grid" name="form" id="form">
                         <div class="contact-inputs grid">
                             <div class="contact-content">
                                 <label for="name" class="contact-label">Name</label>
-                                <input type="text" class="contact-input" id="name" required>
-                            </div>
-                            <div class="contact-content">
-                                <label for="email" class="contact-label">Email</label>
-                                <input type="email" class="contact-input" id="email" required>
+                                <input type="text" class="contact-input" id="name" name="name" required>
                             </div>
                         </div>
 
                         <div class="contact-content">
                             <label for="issue" class="contact-label">Issue</label>
-                            <input type="text" class="contact-input" id="issue">
+                            <input type="text" class="contact-input" id="issue" name="issue">
                         </div>
                         <div class="contact-content">
                             <label for="message" class="contact-label">Message</label>
-                            <textarea name="" id="message" cols="0" rows="7" class="contact-input"></textarea>
+                            <textarea name="message" id="message" cols="0" rows="7" class="contact-input"></textarea>
                         </div>
 
                         <div>
-                            <button type="submit" value="Send" class=" contact-submit button button--flex">
+                            <button type="submit" class=" contact-submit button button--flex">
+                                <a id="mailto" href="#" data-mailto="" style="height: 0;overflow: hidden;"></a>
                                 Send Message
                                 <i class="uil uil-comment-alt-edit button-icon"></i>
-                            </a>
+                            </button>
                         </div>
+                        
                     </form>
                 </div>
 

@@ -124,7 +124,18 @@ let swiperTestimonial = new Swiper('.testimonial-container', {
     }
 });
 
+/*==================== MAIL SENDING ==================*/
+const $form = document.querySelector('#form')
+const $mailto = document.querySelector('#mailto')
 
+$form.addEventListener('submit',handleSubmit)
+
+function handleSubmit(event){
+    event.preventDefault()
+    const form = new FormData(this)
+    $mailto.setAttribute('href',`mailto:marvin-Erazo@hotmail.com?subjet=${form.get('name')}${form.get('issue')}&body=${form.get('message')}`)
+    $mailto.click()
+}
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 
